@@ -10,8 +10,5 @@ ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 /etc/init.d/ssh start
-# source ~/.bashrc
-
-# start-master.sh
 
 tail -f /dev/null

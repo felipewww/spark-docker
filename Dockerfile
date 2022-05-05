@@ -15,9 +15,6 @@ RUN apt install nano
 RUN apt-get install -y openssh-server
 RUN /etc/init.d/ssh start
 
-#hadoop precisa de uma chave para iniciar os workers
-# CMD ssh-keygen -q -t rsa -N '' -f /keys/id_rsa
-
 # RUN wget https://downloads.apache.org/spark/spark-3.0.1/spark-3.0.1-bin-hadoop2.7.tgz
 RUN wget https://dlcdn.apache.org/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz
 
