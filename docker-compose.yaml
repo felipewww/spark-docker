@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  sparkdev:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: sparkdev
+    ports:
+      - 8080:8080
+      - 4040:4040
