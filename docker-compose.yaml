@@ -1,11 +1,24 @@
 version: '3'
 
 services:
-  sparkdev:
+  img-sparkenv:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: sparkdev
+    image: felipewww/sparkenv:latest
+#    container_name: sparkdev
+#    ports:
+#      - 8080:8080
+#      - 4040:4040
+
+  sparkenv:
+    image: felipewww/sparkenv:latest
+    container_name: sparkenv
     ports:
       - 8080:8080
       - 4040:4040
+      - 7077:7077
+    command:
+      - entrypoint.sh
+    volumes:
+      - ./src:/app

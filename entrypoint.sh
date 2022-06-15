@@ -2,7 +2,7 @@
 
 export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 
-echo "Hello spark 2!"
+echo "Hello SparkEnv!"
 
 # hadoop SSH key
 # https://stackoverflow.com/questions/15195048/hadoop-require-roots-password-after-enter-start-all-sh
